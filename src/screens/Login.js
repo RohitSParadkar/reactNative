@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button, TextInput, ImageBackground, TouchableOpacity,Image } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-
+import Example from '../../assets/Example';
 function Login({ navigation }) {
   const [username, setUserName] = React.useState('');
   const [password, setPassword] = React.useState('');
@@ -14,7 +14,7 @@ function Login({ navigation }) {
         style={styles.button}>
         <Text style={styles.text}>Sign in with Facebook</Text>
       </LinearGradient>
-      <Image source={require('./bgimage.png')} style={styles.imageBackground} />
+      <Image source={require('../../assets/bgimage.png')} style={styles.imageBackground} />
       <View style={styles.loginContent}>
         <Text style={styles.textSample}>SAMPLE</Text>
         <Text style={styles.textIOT}>IOT APP</Text>
@@ -127,8 +127,8 @@ const styles = StyleSheet.create({
     marginTop:'2%'
   },
   inputImage: {
-    width: 20, // Adjust the width and height of the image as needed
-    height: 20,
+    width: 10, // Adjust the width and height of the image as needed
+    height: 10,
     marginRight: 10,
   },
 
