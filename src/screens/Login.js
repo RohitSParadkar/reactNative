@@ -35,6 +35,7 @@ function Login({ navigation }) {
             onChangeText={setPassword}
             placeholder='Enter Password'
             value={password}
+            secureTextEntry
           />
           {/* <Image source={require('./lock.png')} style={styles.inputImage} /> */}
           <TouchableOpacity
